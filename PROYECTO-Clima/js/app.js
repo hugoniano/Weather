@@ -18,7 +18,7 @@ function searchWeather(e) {
 
     if(ciudad === '' || pais === ''){
         //Hubo un error
-        mostrarError('Ambos campos son Obligatorios.');
+        mostrarError('Ambos campos son obligatorios.');
         return; //con este detenemos nuestro codigo.
 
     }
@@ -53,7 +53,7 @@ function mostrarError(mensaje){
 
 
 function consultarAPI2(ciudad, pais) {
-    const apiKey = '567d4a613fe14aa4b8c00709911e98fc';
+    const apiKey = 'f8298a1742474c9e81a6380ffd9e45d1';
     const url2 = `https://api.ipgeolocation.io/timezone?apiKey=${apiKey}&location=${ciudad},%20${pais}`;
 
 
@@ -89,7 +89,7 @@ function guardarHora(data){
 
 
 function consultarAPI(ciudad, pais) {
-    const appID = '47f3586bf5961638beb5900079181fee';
+    const appID = '24c441c7a42e082fdec0c67f169ef7da';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${appID}`;
 
     Spinner();
