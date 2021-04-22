@@ -203,7 +203,7 @@ function showWeather(datos){
     resultadoDiv.appendChild(minMax);
     resultadoDiv.appendChild(tempSensa);
     resultadoDiv.appendChild(cielo);
-    resultado.appendChild(resultadoDiv);
+    resultado.appendChild(resultadoDiv);//trabaja en TODO este SCRIPTING se ve muy desordenado los containers
   
 } 
 
@@ -259,7 +259,7 @@ function Spinner (){
 // https://tobiasahlin.com/moving-letters/
 //y hay que hacer similar a spinkit
 // Wrap every letter in a span
-var textWrapper = document.querySelector('.ml3');
+var textWrapper = document.querySelector('.ml3'); //esta funcionalidad se perdio
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline({loop: true})
